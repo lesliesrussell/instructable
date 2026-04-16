@@ -52,19 +52,6 @@ npm run typecheck
 node dist/index.js list
 ```
 
-## Publishing
-
-1. Push the repo to GitHub.
-2. Add an `NPM_TOKEN` secret in the GitHub repository settings.
-3. Publish manually with `npm publish`, or create a GitHub release to trigger `.github/workflows/publish.yml`.
-
-Before publishing, verify the package contents locally:
-
-```sh
-npm run build
-npm pack --dry-run
-```
-
 ## Notes
 
 - SQLite is provided through Bun's native `bun:sqlite` module.
