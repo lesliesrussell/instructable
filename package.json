@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Composable instruction library and CLI for generating AGENTS.md and CLAUDE.md from tagged snippets, profiles, and templates.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesliesrussell/instructable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lesliesrussell/instructable/issues"
+  },
   "type": "module",
   "bin": {
     "instructable": "./dist/index.js"
