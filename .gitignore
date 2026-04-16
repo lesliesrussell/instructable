@@ -1,0 +1,11 @@
+node_modules
+dist
+
+# Local generated instruction outputs
+AGENTS*.md
+CLAUDE*.md
+instructions.md
+
+# Local notes and transient data
+chat.log
+*.db

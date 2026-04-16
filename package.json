@@ -1,0 +1,37 @@
+{
+  "name": "instructable",
+  "version": "0.1.0",
+  "description": "Composable instruction library and CLI for generating AGENTS.md and CLAUDE.md from tagged snippets, profiles, and templates.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "instructable": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18",
+    "bun": ">=1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0"
+  }
+}
